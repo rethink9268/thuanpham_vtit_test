@@ -1,0 +1,104 @@
+.timelines_container {
+  position: relative;
+  margin: 0 auto;
+  width: 95vw;
+  max-width: var(-max-width);
+  padding: 5rem 0;
+  .line_dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: calc(50% - 5px);
+    border-radius: 50%;
+    background: #e1e1e1;
+  }
+  .timeline_title {
+    text-align: center;
+    padding: 0 0 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .timeline {
+    position: relative;
+    .timeline_line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(50% - 1px);
+      border-width: 2px;
+      border-color: #e1e1e1;
+      border-left-style: solid;
+      .dot_start {
+        top: -4px;
+      }
+      .dot_end {
+        bottom: -4px;
+      }
+    }
+    .work_timeline {
+      position: relative;
+      width: 100%;
+      padding: 2rem 0;
+      z-index: 9;
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 2rem;
+      }
+      .timeline_status {
+        padding: 2rem 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .timeline_content {
+          text-align: center;
+          width: 100%;
+          max-width: 360px;
+          background-color: var(--text-clr);
+        }
+      }
+      .status {
+        top: 0;
+        transform: translateX(-50%) !important;
+        left: 50% !important;
+        background-color: var(--primary-clr);
+        margin: -6px 0;
+        width: 12px;
+        height: 12px;
+        border: solid 2px #fff;
+      }
+      .timeline_image {
+        img {
+          width: 100%;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 990px) {
+    .timeline_status {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      grid-gap: 6rem;
+      .timeline_content {
+        padding: 2rem;
+        max-width: unset !important;
+        text-align: right !important;
+      }
+      .timeline_content.order {
+        order: 1;
+        text-align: left !important;
+      }
+      .timeline_image {
+        padding: 2rem;
+      }
+      .status {
+        transform: translateY(-50%) !important;
+        top: 50% !important;
+      }
+    }
+  }
+}

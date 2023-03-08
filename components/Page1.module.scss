@@ -1,0 +1,108 @@
+.container {
+  margin-bottom: 5rem;
+  .grid_container {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .image_container {
+    padding: 1rem 0 0 1rem;
+    width: 100%;
+    order: 2;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      max-width: 453px;
+      position: relative;
+    }
+  }
+  .content {
+    order: 1;
+    position: relative;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .plus {
+    display: flex;
+    flex-direction: column;
+  }
+  .plus_container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 50px;
+      z-index: 1;
+    }
+  }
+  .content_plus {
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
+    position: relative;
+    border: 4px solid #dddddd;
+    margin: 1.5rem 0 0 1.5rem;
+    padding: 2rem 1rem;
+    p {
+      font-size: 1.5rem;
+      color: var(--primary-clr);
+    }
+  }
+  .ruler_container {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 765px) {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    .plus {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    .content {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  @media screen and (min-width: 990px) {
+    background-image: url("https://vncurtains.com/wp-content/uploads/2021/10/repair-pic-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    .grid_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      place-items: center;
+    }
+    .image_container {
+      background-image: unset;
+      background-repeat: unset;
+      background-size: unset;
+      order: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      order: 2;
+      h1 {
+        font-size: 90px;
+        line-height: 1.1em;
+        font-weight: 700;
+      }
+    }
+  }
+}
