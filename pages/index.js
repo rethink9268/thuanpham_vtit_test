@@ -16,7 +16,7 @@ export default function Home() {
       <Page4 slides={dummyData.portfolioSlider} />
       <Page5 {...dummyData.page5} />
       <Page6 {...dummyData.page6} />
-      <Page7 />
+      <Page7 slides={dummyData.reviews} />
     </main>
   );
 }

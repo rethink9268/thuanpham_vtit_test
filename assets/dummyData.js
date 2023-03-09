@@ -125,4 +125,38 @@ export const dummyData = {
       },
     ],
   },
+  reviews: [
+    {
+      id: 1,
+      name: "Kristin Watson",
+      avatar:
+        "https://vncurtains.com/wp-content/uploads/2021/10/lawyer-testimonials-1.jpg",
+      review:
+        "Anyway, you still use Lorem Ipsum and rightly so, as it will always have a place in the web workers toolbox, as things happen, not always.",
+    },
+    {
+      id: 2,
+      name: "Ronald Richards",
+      avatar:
+        "https://vncurtains.com/wp-content/uploads/2021/10/lawyer-testimonials-2.jpg",
+      review:
+        "Anyway, you still use Lorem Ipsum and rightly so, as it will always have a place in the web workers toolbox, as things happen, not always.",
+    },
+    {
+      id: 3,
+      name: "Wade Warren",
+      avatar:
+        "https://vncurtains.com/wp-content/uploads/2021/10/lawyer-testimonials-3.jpg",
+      review:
+        "Anyway, you still use Lorem Ipsum and rightly so, as it will always have a place in the web workers toolbox, as things happen, not always.",
+    },
+    {
+      id: 4,
+      name: "Aviana Plummer",
+      avatar:
+        "https://vncurtains.com/wp-content/uploads/2021/10/lawyer-testimonials-4.jpg",
+      review:
+        "Anyway, you still use Lorem Ipsum and rightly so, as it will always have a place in the web workers toolbox, as things happen, not always.",
+    },
+  ],
 };

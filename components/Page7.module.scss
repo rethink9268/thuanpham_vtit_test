@@ -1,0 +1,55 @@
+.container {
+  padding: 5rem 0;
+  .header_container {
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .carousel_container {
+    position: relative;
+
+    .card {
+      cursor: pointer;
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+        img {
+          border-radius: 50%;
+          display: block;
+          margin-right: 1rem;
+        }
+        div {
+          h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--title-clr);
+          }
+          span {
+            width: 90px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            color: var(--primary-clr);
+          }
+        }
+      }
+      .review {
+        position: relative;
+        padding: 1rem;
+        background-color: #fff;
+        &::before {
+          content: "";
+          position: absolute;
+          border-right: 10px solid transparent;
+          border-bottom: 12px solid #fff;
+          border-left: 10px solid transparent;
+          left: 30px;
+          bottom: 100%;
+        }
+      }
+    }
+  }
+}

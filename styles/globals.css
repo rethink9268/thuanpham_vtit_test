@@ -86,7 +86,7 @@ hr {
   width: fit-content;
 }
 .lines {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
   background-color: #f4f0ed;
   background-position: top center;
   background-repeat: no-repeat;

@@ -58,6 +58,7 @@
           width: 100%;
           max-width: 360px;
           background-color: var(--text-clr);
+          padding-bottom: 1rem;
         }
       }
       .status {
@@ -71,9 +72,11 @@
         border: solid 2px #fff;
       }
       .timeline_image {
+        width: 100%;
         img {
           width: 100%;
           max-width: 500px;
+          height: auto;
         }
       }
     }
