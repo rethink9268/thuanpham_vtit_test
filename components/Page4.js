@@ -2,7 +2,7 @@ import PortfolioSlider from "./PortfolioSlider.js";
 
 export default function Page4({ slides }) {
   return (
-    <div className="lines">
+    <div className="lines" id="portfolio">
       <div className="section-center">
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
           <h5>Our Portfolio</h5>

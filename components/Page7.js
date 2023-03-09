@@ -12,7 +12,7 @@ import "swiper/css/effect-fade";
 
 export default function Page7({ slides }) {
   return (
-    <div className="section-center">
+    <div className="section-center" id="contacts">
       <div className={styles.container}>
         <div className={styles.header_container}>
           <h5>TESTIMONIALS</h5>

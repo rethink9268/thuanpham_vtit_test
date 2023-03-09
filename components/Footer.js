@@ -17,16 +17,7 @@ export default function Footer() {
             </Link>
             <div className={styles.content}>
               <div>
-                <span>
-                  <FaLocationArrow />
-                </span>
-                <span>CN1: 11B - TL15 - Tân Thạnh Đông - Củ Chi - HCM</span>
-              </div>
-              <div>
-                <span>
-                  <FaLocationArrow />
-                </span>
-                <span>CN2: 89 - Dương Đình Hội - TP Thủ Đức - HCM</span>
+                <p>WOODMART Created By XTEMOS STUDIO &copy; Copyright 2021</p>
               </div>
             </div>
           </div>

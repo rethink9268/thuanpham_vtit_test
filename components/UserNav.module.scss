@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  .button_container {
+    .button_login {
+      button {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--title-clr);
+        border: none;
+        background: transparent;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-clr);
+        }
+      }
+    }
+    .avatar {
+      position: relative;
+      .image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img {
+          border: none;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+        button {
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: var(--primary-clr);
+          border: none;
+          background: transparent;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

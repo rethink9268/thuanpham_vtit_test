@@ -1,10 +1,10 @@
-import Link from 'next/link.js';
-import Image from 'next/image.js';
-import styles from './Page5.module.scss';
+import Link from "next/link.js";
+import Image from "next/image.js";
+import styles from "./Page5.module.scss";
 
 export default function Page5({ title, subtitle, desc, items, info_box }) {
   return (
-    <div className="section-center">
+    <div className="section-center" id="advantages">
       <div className={styles.container}>
         <article className={styles.advantages_title}>
           <h5>{subtitle}</h5>

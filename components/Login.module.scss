@@ -1,0 +1,102 @@
+.overlay {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s;
+  display: none;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  &.active {
+    display: block;
+    animation: fadeIn 0.3s;
+  }
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    max-width: 360px;
+    width: 100%;
+    padding: 1rem;
+    .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      h5 {
+        margin: 0;
+      }
+      span {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.25s;
+        &:hover {
+          color: var(--primary-clr);
+        }
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      .formCtrl {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        label {
+          padding-bottom: 0.5rem;
+        }
+        input {
+          padding: 15px;
+          border-radius: 0;
+          border: 2px solid var(--dark-text-clr);
+        }
+      }
+      .check {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
+    .create_account {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 80px;
+        height: 80px;
+        fill: var(--dark-text-clr);
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: var(--title-clr);
+        transition: ease 0.25s;
+        &:hover {
+          color: var(--primary-clr);
+        }
+      }
+    }
+  }
+}

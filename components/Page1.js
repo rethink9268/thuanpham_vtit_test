@@ -3,9 +3,9 @@ import Image from "next/image.js";
 import styles from "./Page1.module.scss";
 import RulerRepair from "./RulerRepair.js";
 
-export default function Page1({ url, info_box, items }) {
+export default function Page1({ url, info_box }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="home">
       <div className={styles.grid_container}>
         <article className={styles.image_container}>
           <Image height={560} width={362} src={url} alt="Vncurtains" />

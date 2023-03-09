@@ -1,10 +1,10 @@
-import styles from './Page3.module.scss';
-import Link from 'next/link.js';
-import Image from 'next/image.js';
+import styles from "./Page3.module.scss";
+import Link from "next/link.js";
+import Image from "next/image.js";
 
 export default function Page3({ url, check_box }) {
   return (
-    <div className="section-center">
+    <div className="section-center" id="services">
       <div className={styles.container}>
         <article className={styles.image_container}>
           <Image src={url} width={440} height={520} alt="banner" />
